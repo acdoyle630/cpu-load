@@ -12,9 +12,25 @@ In order to run this applicaion you must have node and npm installed globally. (
 
 ### Installing
 
-To install all other dependencies simply navigate to the correct directory in the terminal and npm install
+To install all other dependencies simply navigate to the correct directory in the terminal and npm install, and all dependencies from package.json will be installed
 ```
 npm install
 ```
+### Running the application
+
+To run you need to start the server, and npm start the Front-end.  To stat the server:
+```
+nodemon index.js
+```
+
+To start the Front-end
+```
+npm start
+```
+
+### Built with
++ Node.js
++ React.js
++ Express.js
 
 
