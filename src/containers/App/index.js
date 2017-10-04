@@ -13,8 +13,11 @@ class App extends Component {
   //Mount cpu average
 
   componentWillMount() {
-    //os.loadavg()
-    console.log(os.loadavg())
+    fetch('/api/loadAvg', {
+      method: "GET"
+    }).then((response) =>{
+      console.log(response)
+    })
 
   }
 
