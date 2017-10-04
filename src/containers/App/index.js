@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
         selectedIndex: 0,
         selectedInterval:"One Minute",
-        valueArray :[],
+        valueArray :[0,0,0,0,0,0,0,0,0],
         displaySpeed: 0
       }
   }
