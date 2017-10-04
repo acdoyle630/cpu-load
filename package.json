@@ -8,9 +8,11 @@
     "express": "^4.16.1",
     "express-session": "^1.15.6",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-linechart": "^1.1.12"
   },
   "devDependencies": {
+    "concurrently": "^3.4.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
@@ -18,5 +20,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acdoyle630/cpu-load.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acdoyle630/cpu-load/issues"
+  },
+  "homepage": "https://github.com/acdoyle630/cpu-load#readme"
 }

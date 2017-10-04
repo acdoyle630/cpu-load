@@ -2,10 +2,12 @@
 
 const express = require('express');
 const loadAvg = express.Router();
+const os = require("os");
 
 loadAvg.get('/', (req, res) =>{
   console.log('hit loadAvg API');
-  console.log(os.loadavg());
+  let averageArray = (os.loadavg());
+  res.json(averageArray);
 });
 
 module.exports = loadAvg;

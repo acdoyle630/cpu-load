@@ -16,13 +16,23 @@ class App extends Component {
     fetch('/api/loadAvg', {
       method: "GET"
     }).then((response) =>{
-      console.log(response)
+      return response.json()
+    }).then((values)=>{
+      console.log(values)
     })
 
   }
 
   checkLoadAvg(){
-    console.log(os.loadavg())
+    console.log('clicked')
+    fetch('/api/loadAvg', {
+      method: "GET",
+      credentials: "include"
+    }).then((response) =>{
+      return response.json()
+    }).then((values) =>{
+      console.log(values)
+    })
   }
 
 
