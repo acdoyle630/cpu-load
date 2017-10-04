@@ -13,6 +13,8 @@ In order to run this applicaion you must have node and npm installed globally. (
 ### Installing
 
 To install all other dependencies simply navigate to the correct directory in the terminal and npm install
-```npm install```
+```
+npm install
+```
 
 
