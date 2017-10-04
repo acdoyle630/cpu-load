@@ -10,9 +10,18 @@ class App extends Component {
     super(props);
 
     this.state = {
-      valueOne: 0,
-      valueTwo: 0,
-      valueThree: 0
+      selected : 1,
+      currentValues: {
+        valueOne: undefined,
+        valueTwo: undefined,
+        valueThree: undefined,
+        valueFour : undefined,
+        valueFive : undefined,
+        valueSix : undefined,
+        valueSeven : undefined,
+        valueEight : undefined,
+        valueNine : undefined
+      }
     }
 
   }
@@ -43,21 +52,19 @@ class App extends Component {
   }
 
   loadNewValues=(values)=>{
-    this.setState({
-      valueOne : values[0],
-      valueTwo : values[1],
-      valueThree : values[2]
+      this.setState({
+      valueOne : values[this.state.selected]
     })
   }
 
 
   render() {
-    console.log(this.state)
+    console.log(Object.values.currentValues(this.state))
 
     const data = [
     {
       color: "blue",
-      points: [{x: 1, y: this.state.valueOne}, {x: 3, y: this.state.valueTwo}, {x: 5, y: this.state.valueThree}]
+      points: [{x: 1, y: this.state.valueOne}, {x: 2, y: this.state.valueTwo}, {x: 3, y: this.state.valueThree}, {x: 4, y: this.state.valueFour}, {x: 5, y: this.state.valueFive}, {x:6, y: this.state.valueSix}, {x: 7, y: this.state.valueSeven}, {x: 8, y: this.state.valueEight}, {x: 9, y: this.state.valueNine}]
     }]
 
     return (
