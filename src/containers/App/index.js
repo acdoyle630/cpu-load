@@ -57,21 +57,13 @@ class App extends Component {
 
   loadNewValues(returnedValues){
     let alteredValueArray = []
-    if(this.state.valueArray.length < 9){
-      this.setState({
-        valueArray: [...this.state.valueArray, returnedValues[this.state.selectedIndex]],
-        displaySpeed: returnedValues[this.state.selectedIndex]
-      })
-    }
-    else{
-      alteredValueArray = this.state.valueArray
-      alteredValueArray.shift()
-      alteredValueArray.push(returnedValues[this.state.selectedIndex])
-      this.setState({
-        valueArray: alteredValueArray,
-        displaySpeed: returnedValues[this.state.selectedIndex]
-      })
-    }
+    alteredValueArray = this.state.valueArray
+    alteredValueArray.shift()
+    alteredValueArray.push(returnedValues[this.state.selectedIndex])
+    this.setState({
+    valueArray: alteredValueArray,
+    displaySpeed: returnedValues[this.state.selectedIndex]
+    })
   }
 
   render() {
